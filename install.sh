@@ -7,15 +7,6 @@
 # -----------------------------------------------------------------------------
 rustc --version || curl https://sh.rustup.rs -sSf | sh
 
-
-# -----------------------------------------------------------------------------
-# 1.5) Update package lists and install required dependencies
-# -----------------------------------------------------------------------------
-echo "Updating package lists and installing dependencies..."
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y build-essential pkg-config libssl-dev git-all protobuf-compiler
-
-
 # -----------------------------------------------------------------------------
 # 2) Define environment variables and colors for terminal output.
 # -----------------------------------------------------------------------------
@@ -27,8 +18,8 @@ NC='\033[0m'  # No Color
 # Ensure the $NEXUS_HOME directory exists.
 [ -d "$NEXUS_HOME" ] || mkdir -p "$NEXUS_HOME"
 
-# Set node-id to 352156
-echo "352156" > "$NEXUS_HOME/node-id"
+# Set node-id to 5769443
+echo "5769443" > "$NEXUS_HOME/node-id"
 
 # -----------------------------------------------------------------------------
 # 3) Display a message if we're interactive (NONINTERACTIVE is not set) and the
